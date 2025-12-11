@@ -1,0 +1,31 @@
+# Policy 本地测试配置文件
+# 修改此文件后运行: python test_policy_local.py
+
+# 要测试的 Policy 名称
+policy: stream_quality
+
+# AWS 区域
+region: us-east-1
+
+# 上下文帧数量
+# prev_count: target 前面取几帧作为上下文
+# next_count: target 后面取几帧作为上下文
+# 例如: prev_count=1, next_count=1 表示 [prev, target, next] 共3帧
+prev_count: 2
+next_count: 2
+
+# 步长 - 每次滑动几帧
+# 1 = 每帧都作为 target 分析
+# 3 = 每隔3帧分析一次
+step: 1
+
+# 图片列表 - 支持本地路径或 URL，按时间顺序排列
+images:
+  # 本地文件示例:
+  # - ./test_images/frame_001.jpg
+  # - ./test_images/frame_002.jpg
+  # - ./test_images/frame_003.jpg
+  
+  # URL 示例:
+  # - https://example.com/frame1.jpg
+  # - https://example.com/frame2.jpg

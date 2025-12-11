@@ -1,0 +1,34 @@
+{
+  "name": "drinking-detection-positive",
+  "description": "测试喝东西检测 - 正向场景（真的在喝水）",
+  "enabled_policies": ["drinking_detection"],
+  "frames": [
+    {
+      "url": "https://d1ailgqvsvzgh0.cloudfront.net/images/nocache/drinking-detection/drinking/image1.jpg",
+      "description": "第1秒 - 人物正在喝水",
+      "expected_results": {
+        "drinking_is_drinking": true,
+        "drinking_confidence_min": 0.7,
+        "drinking_confidence_max": 1.0
+      }
+    },
+    {
+      "url": "https://d1ailgqvsvzgh0.cloudfront.net/images/nocache/drinking-detection/drinking/image2.jpg",
+      "description": "第2秒 - 人物正在喝水",
+      "expected_results": {
+        "drinking_is_drinking": true,
+        "drinking_confidence_min": 0.7,
+        "drinking_confidence_max": 1.0
+      }
+    },
+    {
+      "url": "https://d1ailgqvsvzgh0.cloudfront.net/images/nocache/drinking-detection/drinking/image3.jpg",
+      "description": "第3秒 - 人物正在喝水",
+      "expected_results": {
+        "drinking_is_drinking": true,
+        "drinking_confidence_min": 0.7,
+        "drinking_confidence_max": 1.0
+      }
+    }
+  ]
+}
