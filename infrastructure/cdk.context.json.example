@@ -1,0 +1,6 @@
+{
+  "udemoAccessKeyId": "YOUR_ACCESS_KEY_ID",
+  "udemoSecretAccessKey": "YOUR_SECRET_ACCESS_KEY",
+  "udemoBucket": "udemo-us-east-1",
+  "udemoRegion": "us-east-1"
+}
